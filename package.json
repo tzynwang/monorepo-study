@@ -1,0 +1,17 @@
+{
+  "name": "plain-react-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "yarn workspace @plain-react-webpack/apps start"
+  },
+  "workspaces": [
+    "apps/**",
+    "packages/**"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
