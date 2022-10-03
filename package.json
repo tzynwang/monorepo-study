@@ -2,7 +2,6 @@
   "name": "plain-react-webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "private": true,
   "scripts": {
     "start": "yarn workspace @plain-react-webpack/apps start"
