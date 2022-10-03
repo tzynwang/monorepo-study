@@ -1,5 +1,7 @@
 {
-  "name": "@plain-react-webpack/packages",
+  "name": "@plain-react-webpack/components",
+  "main": "./src/index.tsx",
+  "types": "./src/types.d.ts",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
