@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import cn from 'classnames';
-import Hello from '@plain-react-webpack/packages/src/components/Hello';
+import { Hello } from '@plain-react-webpack/components';
 import scopedStyle from './App.module.css';
 import './App.css';
 
