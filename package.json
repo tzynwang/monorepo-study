@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "yarn workspace @plain-react-webpack/apps start"
+    "start:apps": "yarn workspace @plain-react-webpack/apps start",
+    "del:node_modules": "find . -type d -name 'node_modules' -exec rm -rf {} +"
   },
   "workspaces": [
     "apps/**",
