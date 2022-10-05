@@ -1,8 +1,8 @@
 import React, { memo } from 'react';
 import cn from 'classnames';
 import { Hello } from '@plain-react-webpack/components';
-import scopedStyle from './App.module.css';
-import './App.css';
+import scopedStyle from './index.module.css';
+import './style.css';
 
 function App(): React.ReactElement {
   /* Main */
