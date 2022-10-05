@@ -1,10 +1,10 @@
 {
-  "name": "plain-react-webpack",
+  "name": "monorepo-study",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
-    "start:apps": "yarn workspace @plain-react-webpack/apps start",
+    "start:apps": "yarn workspace @monorepo-study/apps start",
     "del:node_modules": "find . -type d -name 'node_modules' -exec rm -rf {} +"
   },
   "workspaces": [

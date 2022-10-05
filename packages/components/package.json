@@ -1,5 +1,5 @@
 {
-  "name": "@plain-react-webpack/components",
+  "name": "@monorepo-study/components",
   "main": "./src/index.tsx",
   "types": "./src/types.d.ts",
   "version": "1.0.0",
