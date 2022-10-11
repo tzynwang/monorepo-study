@@ -1,4 +1,6 @@
-/node_modules
-**/node_modules
-
+# file
 .env
+
+# folder
+dist
+node_modules
