@@ -4,11 +4,11 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start:apps": "yarn workspace @monorepo-study/apps start",
+    "start:app": "yarn workspace @monorepo-study/app start",
     "del:node_modules": "find . -type d -name 'node_modules' -exec rm -rf {} +"
   },
   "workspaces": [
-    "apps/**",
+    "app/**",
     "packages/**"
   ],
   "keywords": [],
