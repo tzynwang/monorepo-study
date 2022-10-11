@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start:app": "yarn workspace @monorepo-study/app start",
+    "start": "yarn workspace @monorepo-study/app start",
+    "build": "yarn workspace @monorepo-study/app build",
     "del:node_modules": "find . -type d -name 'node_modules' -exec rm -rf {} +"
   },
   "workspaces": [
