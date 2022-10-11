@@ -9,9 +9,9 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
+    historyApiFallback: true,
     host,
     hot: true,
-    historyApiFallback: true,
     open: true,
     port,
   },
