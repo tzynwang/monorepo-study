@@ -3,18 +3,13 @@ const DotenvWebpack = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 require('dotenv').config();
 
-const host = process.env.HOST || 'localhost';
-const mode = process.env.MODE || 'development';
-const port = process.env.PORT || 55688;
-
 module.exports = {
-  mode,
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.[hash].js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
-  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -58,17 +53,11 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
+
   plugins: [
     new DotenvWebpack(),
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
   ],
-  devServer: {
-    host,
-    hot: true,
-    historyApiFallback: true,
-    open: true,
-    port,
-  },
 };
