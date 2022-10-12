@@ -15,12 +15,11 @@ compiler.run((err, stats) => {
 
   // https://webpack.js.org/api/stats/#structure
   const info = stats.toJson();
-  const buildAtISOArray = new Date(info.builtAt).toISOString().split('T');
   console.info('-----');
   console.info(`Hash: ${info.hash}`);
   console.info(`Webpack version: ${info.version}`);
   console.info(`Compilation time: ${info.time / 1000}s`);
-  console.info(`Built at: ${buildAtISOArray[0]} ${buildAtISOArray[1].slice(0, 8)}`);
+  console.info(`Built at: ${new Date(info.builtAt).toString()}`);
   console.info('-----');
 
   if (stats.hasErrors()) {
