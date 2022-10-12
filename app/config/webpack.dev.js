@@ -5,7 +5,7 @@ require('dotenv').config();
 const host = process.env.HOST || 'localhost';
 const port = process.env.PORT || 55688;
 
-module.exports = merge(common, {
+module.exports = merge(common('development'), {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
